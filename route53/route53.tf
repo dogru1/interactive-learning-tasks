@@ -1,7 +1,7 @@
-resource "aws_route53_record" "main" {
+resource "aws_route53_zone" "main" {
     name = "awsdogru.com"
 }
-resource "aws_route53_record" "dev" {
+resource "aws_route53_zone" "dev" {
     name = "awsdogru.com"
 }
 
