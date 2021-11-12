@@ -2,7 +2,7 @@ resource "aws_route53_zone" "main" {
     name = "awsdogru.com"
 }
 resource "aws_route53_zone" "dev" {
-    name = "awsdogru.com"
+    name = "blog.awsdogru.com"
 }
 
 resource "aws_route53_record" "dev-ns" {
@@ -12,5 +12,3 @@ resource "aws_route53_record" "dev-ns" {
   ttl     = "300"
   records = ["127.0.0.1"]
 }
-
-
